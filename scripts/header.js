@@ -4,7 +4,7 @@ const logoURL = "URL"
 
 
 
-const getHeader = () => {
+export const getHeader = () => {
     const headerHTML = `
         <header>
             <img src="${logoURL}" alt="Park Logo">
