@@ -81,9 +81,9 @@ const database = {
     ],
     guests: [
         {
-            id: ,
+            id: 1,
             name: "",
-            areaId: 
+            areaId:1 
         }
     ],
     areaServices: [
