@@ -245,6 +245,18 @@ const database = {
     ]
 }
 
-export const getGuestsList = () => {
-    return database.guests.map(guests => ({...guests}))
+export const getAreas = () => {
+    return database.areas.map(area => ({...area}))
+}
+
+export const getServices = () => {
+    return database.services.map(service => ({...service}))
+}
+
+export const getGuests = () => {
+    return database.guests.map(guest => ({...guest}))
+}
+
+export const getAreaServices = () => {
+    return database.areaServices.map(areaServ => ({...areaServ}))
 }
