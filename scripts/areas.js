@@ -1,4 +1,4 @@
-import { getAreas, getAreaServices, getServices } from ("./database.js")
+import { getAreas, getAreaServices, getServices } from "./database.js"
 
 // Generates HTML for the Areas section of the page
 export const areasList = () => {
@@ -11,7 +11,7 @@ export const areasList = () => {
     for (const area of areas) {
         html += `<div class="area-card">
         <div class="area-img"><img src="${area.imageURL}"></div>
-        <div class="area-title"></div>
+        <div class="area-title">${area.name}</div>
         <div class="area-services">
             <ul>`
 
