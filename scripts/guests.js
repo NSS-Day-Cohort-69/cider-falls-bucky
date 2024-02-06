@@ -7,8 +7,8 @@ export const guestsList = () => {
 
     for (const guest of guests) {
         htmlString += `<div class="guest-item">
-        <div Name: ${guest.name} </div>
-        <div ${guest.areaId} </div>
+        <div> Name: ${guest.name} </div>
+        <div> ${guest.areaId} </div>
         </div>
         `
     }
