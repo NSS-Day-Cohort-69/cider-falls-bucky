@@ -82,8 +82,73 @@ const database = {
     guests: [
         {
             id: 1,
-            name: "",
-            areaId: 1 
+            name: "Ethan Johnson",
+            areaId: 8
+        },
+        {
+            id: 2,
+            name: "Sophia Williams",
+            areaId: 3
+        },
+        {
+            id: 3,
+            name: "Liam Brown",
+            areaId: 1
+        },
+        {
+            id: 4,
+            name: "Olivia Jones",
+            areaId: 5
+        },
+        {
+            id: 5,
+            name: "Noah Miller",
+            areaId: 6
+        },
+        {
+            id: 6,
+            name: "Emma Davis",
+            areaId: 2
+        },
+        {
+            id: 7,
+            name: "Lucas Wilson",
+            areaId: 10
+        },
+        {
+            id: 8,
+            name: "Ava Taylor",
+            areaId: 4
+        },
+        {
+            id: 9,
+            name: "Oliver Marinez",
+            areaId: 10
+        },
+        {
+            id: 10,
+            name: "Isabella Anderson",
+            areaId: 1
+        },
+        {
+            id: 11,
+            name: "Mason Thompson",
+            areaId: 7
+        },
+        {
+            id: 12,
+            name: "Mia Garcia",
+            areaId: 8
+        },
+        {
+            id: 13,
+            name: "Elijah Rodriguez",
+            areaId: 9
+        },
+        {
+            id: 14,
+            name: "Charlotte Martinez",
+            areaId: 6
         }
     ],
     areaServices: [

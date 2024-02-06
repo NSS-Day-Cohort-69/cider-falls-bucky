@@ -1,13 +1,16 @@
-/* 
-    Define function to generate HTML for guests
+import { getGuests } from "./database.js"
 
-        Generate String representing HTML
 
-            Iterate through guests
-        
-                Add guest name
+export const guestsList = () => {
+    const guests = getGuests()
+    let htmlString = `<div class="guests-list">`
 
-                Add park area id as state
-
-        Return HTML String
-*/
+    for (const guest of guests) {
+        htmlString += `<div class="guest-item">
+        <div Name: ${guest.name} </div>
+        <div ${guest.areaId} </div>
+        </div>
+        `
+    }
+     return htmlString += `</div>`
+}
