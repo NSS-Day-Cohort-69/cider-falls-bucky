@@ -3,37 +3,37 @@ const database = {
         {
             id: 1,
             name: "Chamfort River",
-            imageURL: ""
+            imageURL: "../assets/chamfort.jpg"
 
         },
         {
             id: 2,
             name: "Lost Wolf Hiking Trail",
-            imageURL: ""
+            imageURL: "../assets/lostwolf.jpg"
 
         },
         {
             id: 3,
             name: "Lodge",
-            imageURL: ""
+            imageURL: "../assets/lodge.jpg"
 
         },
         {
             id: 4,
             name: "Gander River",
-            imageURL: ""
+            imageURL: "../assets/ganderriver.jpg"
 
         },
         {
             id: 5,
             name: "Campgrounds",
-            imageURL: ""
+            imageURL: "../assets/campgrounds.jpg"
 
         },
         {
             id: 6,
             name: "Pine Bluff Trails",
-            imageURL: ""
+            imageURL: "../assets/pinebluff.jpg"
 
         }
     ],
