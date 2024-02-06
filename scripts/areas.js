@@ -5,7 +5,7 @@ export const areasList = () => {
     const areas = getAreas()
     
     // Initializes the beginning of the String representation of HTML
-    let html = `<section class="area-list">`
+    let html = `<section id="area-list">`
 
     // Generates the HTML for each individual Area
     for (const area of areas) {
