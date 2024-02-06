@@ -1,3 +1,13 @@
 /* 
-    
+    Define a function to generate HTML for footer
+
+        Generate String representing HTML
+
+            Add address
+
+            Add email
+
+            Add phone number
+
+        Return HTML String
 */

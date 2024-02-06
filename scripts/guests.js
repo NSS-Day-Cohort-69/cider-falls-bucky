@@ -1,3 +1,13 @@
 /* 
-    
+    Define function to generate HTML for guests
+
+        Generate String representing HTML
+
+            Iterate through guests
+        
+                Add guest name
+
+                Add park area id as state
+
+        Return HTML String
 */
