@@ -1,3 +1,23 @@
+#main-content {
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
     max-width: 500px;
+}
+
+#area-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+}
+
+.area-card {
+    background-color: red;
+    flex-basis: 30%;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 1em;
+
 }
