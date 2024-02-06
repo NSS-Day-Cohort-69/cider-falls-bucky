@@ -1,6 +1,6 @@
 
 const parkName = "Cider Falls"
-const logoURL = "URL"
+const logoURL = "../assets/cider-falls-logo.png"
 
 
 
