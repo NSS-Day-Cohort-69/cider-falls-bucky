@@ -17,3 +17,8 @@
 
     Inject HTML into HTML Object variable
 */
+
+import { areasList } from "./areas.js";
+
+const mainHTML = document.querySelector("#container")
+mainHTML.innerHTML += areasList()
