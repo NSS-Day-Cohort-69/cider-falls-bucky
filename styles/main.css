@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #main-content {
     display: flex;
     flex-direction: row;
@@ -11,14 +15,16 @@
     display: flex;
     flex-wrap: wrap;
     flex-basis: 70%;
+    justify-content: space-between;
 }
 
 .area-card {
-    background-color: red;
+    background-color: #F0EBCE;
+    border-radius: 15px;
     flex-basis: 30%;
-    justify-content: space-between;
-    margin: 5px;
+    margin: 0 1em 3em 1em;
     padding: 1em;
+    max-width: 25%;
 }
 
 .guest-list {
