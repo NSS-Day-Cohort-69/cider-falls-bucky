@@ -14,8 +14,7 @@ export const areasList = () => {
             <img src="${area.imageURL}">
             <div class="area-title">${area.name}</div>
         </div>
-        <div class="area-services">
-            <ul>`
+        <div class="area-services">`
 
         // Iterates through the Objects from the areaServices Array
         const areaServices = getAreaServices()
@@ -32,14 +31,14 @@ export const areasList = () => {
                     if (service.id === areaService.serviceId) {
                         
                         //
-                        html += `<li class="service">${service.name}</li>`
+                        html += `<div class="service">${service.name}</div>`
                     }
                 }
             }
         }
         
         // Adds the closing HTML tags for an individual Area
-        html += `</ul></div></div>`
+        html += `</div></div>`
     }
 
     // Adds the closing HTML tag for the list of Areas
