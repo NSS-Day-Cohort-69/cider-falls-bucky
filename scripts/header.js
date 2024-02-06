@@ -6,9 +6,9 @@ const logoURL = "URL"
 
 export const getHeader = () => {
     const headerHTML = `
-        <header>
-            <img src="${logoURL}" alt="Park Logo">
-            <h1>${parkName} State Park </h1>
+        <header class="header">
+            <img class="logo" src="${logoURL}" alt="Park Logo">
+            <h1 class="park-name" >${parkName} State Park </h1>
         </header>`
         return headerHTML
     } 
