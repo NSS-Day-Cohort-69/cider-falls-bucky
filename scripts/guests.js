@@ -11,3 +11,20 @@
 
         Return HTML String
 */
+
+import { getGuestsList } from "./database.js"
+
+
+export const guestsList = () => {
+    const guests = getGuestsList()
+    let htmlString = `<div class="guests">`
+
+    for (const guest of guests) {
+        htmlString += `<div class="guestList">
+        <div Name: ${guest.name} </div>
+        <div ${guest.areaId} </div>
+        </div>
+        `
+    }
+    htmlString += `</div>`
+}
