@@ -1,7 +1,7 @@
 import { getAreas, getAreaServices, getServices } from ("./database.js")
 
 // Generates HTML for the Areas section of the page
-export const areas = () => {
+export const areasList = () => {
     const areas = getAreas()
     
     // Initializes the beginning of the String representation of HTML
