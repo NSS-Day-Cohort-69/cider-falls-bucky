@@ -12,19 +12,19 @@
         Return HTML String
 */
 
-import { getGuestsList } from "./database.js"
+import { getGuests } from "./database.js"
 
 
 export const guestsList = () => {
-    const guests = getGuestsList()
-    let htmlString = `<div class="guests">`
+    const guests = getGuests()
+    let htmlString = `<div class="guests-list">`
 
     for (const guest of guests) {
-        htmlString += `<div class="guestList">
+        htmlString += `<div class="guest-item">
         <div Name: ${guest.name} </div>
         <div ${guest.areaId} </div>
         </div>
         `
     }
-    htmlString += `</div>`
+     return htmlString += `</div>`
 }
