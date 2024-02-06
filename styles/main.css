@@ -19,5 +19,14 @@
     justify-content: space-between;
     margin: 5px;
     padding: 1em;
+}
 
+.guest-list {
+    flex-basis: 25%;
+}
+
+.guest-item {
+    border: 1px solid #4E6C50;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
