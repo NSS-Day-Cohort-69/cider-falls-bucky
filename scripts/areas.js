@@ -10,8 +10,10 @@ export const areasList = () => {
     // Generates the HTML for each individual Area
     for (const area of areas) {
         html += `<div class="area-card">
-        <div class="area-img"><img src="${area.imageURL}"></div>
-        <div class="area-title">${area.name}</div>
+        <div class="area-header">
+            <img src="${area.imageURL}">
+            <div class="area-title">${area.name}</div>
+        </div>
         <div class="area-services">
             <ul>`
 
