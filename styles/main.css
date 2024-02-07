@@ -9,11 +9,26 @@ body {
 }
 
 .logo {
-    max-width: 500px;
+    max-width: 400px;
+    padding: 80px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    background-color:#f0ebce;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    height: 170px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%), 0 1px 2px
+}
 
-
+.park-name {
+    padding: 80px;
+    
+}
 
 #area-list {
     display: flex;
