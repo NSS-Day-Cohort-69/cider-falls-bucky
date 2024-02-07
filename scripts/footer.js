@@ -1,16 +1,16 @@
 
-const parkAddress = "Cider Falls"
-const parkEmail = "URL"
-const parkNumber = "1-800-cider"
+const parkAddress = "1234 Cider Street, Nashville TN"
+const parkEmail = "buckycider@ciderfalls.com"
+const parkNumber = "1-800-CIDER"
 
 
 
 export const getFooter = () => {
     const footerHTML = `
         <footer class="park-info">
-            <h2 class="park-address">${parkAddress}</h2>
-            <h2 class="park-email">${parkEmail}</h2>
-            <h2 class="park-number">${parkNumber}</h2>
+            <div class="park-address"><b>Address:</b> <i>${parkAddress}</i></div>
+            <div class="park-email"><b>E-Mail:</b> <i>${parkEmail}</i></div>
+            <div class="park-number"><b>Phone Number:</b> <i>${parkNumber}</i></div>
         </footer>`
         return footerHTML
-    } 
+    }
