@@ -1,3 +1,11 @@
 header img {
     max-width: 500px;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color:#f0ebce;
+    justify-content: space-between;
+    white-space: nowrap;
+}
