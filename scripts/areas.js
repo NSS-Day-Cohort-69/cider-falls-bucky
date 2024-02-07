@@ -5,15 +5,16 @@ export const areasList = () => {
     const areas = getAreas()
     
     // Initializes the beginning of the String representation of HTML
-    let html = `<section class="area-list">`
+    let html = `<section id="area-list">`
 
     // Generates the HTML for each individual Area
     for (const area of areas) {
-        html += `<div class="area-card">
-        <div class="area-img"><img src="${area.imageURL}"></div>
-        <div class="area-title">${area.name}</div>
-        <div class="area-services">
-            <ul>`
+        html += `<div class="area-card" data-type="area" data-id="${area.id}">
+        <div class="area-header">
+            <img src="${area.imageURL}">
+            <div class="area-title">${area.name}</div>
+        </div>
+        <div class="area-services">`
 
         // Iterates through the Objects from the areaServices Array
         const areaServices = getAreaServices()
@@ -30,14 +31,14 @@ export const areasList = () => {
                     if (service.id === areaService.serviceId) {
                         
                         //
-                        html += `<li class="service">${service.name}</li>`
+                        html += `<div class="service" data-type="service" data-id="${service.id}">${service.name}</div>`
                     }
                 }
             }
         }
         
         // Adds the closing HTML tags for an individual Area
-        html += `</ul></div></div>`
+        html += `</div></div>`
     }
 
     // Adds the closing HTML tag for the list of Areas
