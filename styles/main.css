@@ -1,5 +1,16 @@
-header img {
-    max-width: 500px;
+body {
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 400px;
+    padding: 80px;
 }
 
 .header {
@@ -9,13 +20,97 @@ header img {
     justify-content: space-between;
     white-space: nowrap;
     font-size: 1.8em;
+    margin-bottom: 40px;
+    height: 170px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%), 0 1px 2px
 }
 
 .park-name {
-    padding: 50px;
+    padding: 80px;
     
 }
 
-.logo {
-    padding: 50px;
+#area-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-right: 4em;
+}
+
+.area-card {
+    font-family: sans-serif;
+    background-color: #F0EBCE;
+    border-radius: 15px;
+    flex-basis: 30%;
+    margin: 0 1em 3em 0;
+    max-width: 25%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.area-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.area-header {
+    position: relative;
+}
+
+.area-header img {
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 150px;
+    width: 100%;
+}
+
+.area-title {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding-right: 12px;
+    -webkit-text-stroke: #789271 1px;
+}
+
+.area-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5em;
+    height: 100%;
+}
+
+.service {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 75%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+.guest-list {
+    flex-basis: 25%;
+}
+
+.guest-item {
+    border: 1px solid #4E6C50;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #4E6C50;
+}
+
+.second-header {
+    color: #4E6C50;
+    font-weight: bold;
+    font-size: x-large;
 }

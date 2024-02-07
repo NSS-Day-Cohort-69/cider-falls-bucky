@@ -6,6 +6,8 @@ import { getFooter } from "./footer.js";
 
 const mainHTML = document.querySelector("#container")
 mainHTML.innerHTML = `${getHeader()}
-${areasList()}
-${guestsList()}
+    <div id="main-content">
+        ${areasList()}
+        ${guestsList()}
+    </div>
 ${getFooter()}`
