@@ -41,8 +41,9 @@ export const serviceList = () => {
 
     let HTMLstring = `<div class="service__list">`
 for (const service of services) {
-    HTMLstring = `<div data-type"service" data-id"${service.id}" class="service">${service}</div>  `
+    HTMLstring += `<div data-type"service" data-id"${service.id}" class="service">${service.name}</div>  `
     
 }
-    HTMLstring = `</div>`
+    HTMLstring += `</div>`
+    return HTMLstring
 }
