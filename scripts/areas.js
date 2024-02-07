@@ -9,7 +9,7 @@ export const areasList = () => {
 
     // Generates the HTML for each individual Area
     for (const area of areas) {
-        html += `<div class="area-card">
+        html += `<div class="area-card" data-type="area" data-id="${area.id}">
         <div class="area-header">
             <img src="${area.imageURL}">
             <div class="area-title">${area.name}</div>
@@ -31,7 +31,7 @@ export const areasList = () => {
                     if (service.id === areaService.serviceId) {
                         
                         //
-                        html += `<div class="service">${service.name}</div>`
+                        html += `<div class="service" data-type="service" data-id="${service.id}">${service.name}</div>`
                     }
                 }
             }
