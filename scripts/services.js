@@ -15,7 +15,7 @@ document.addEventListener(
             const areas = getAreas()
             const areaServices = getAreaServices()
             for (const service of areaServices) {
-                if (service.id === parseInt(serviceId)) {
+                if (service.serviceId === parseInt(serviceId)) {
                     areaIds.push(service.areaId)
                 }
             }
@@ -41,7 +41,7 @@ export const serviceList = () => {
 
     let HTMLstring = `<div class="service__list">`
 for (const service of services) {
-    HTMLstring += `<div data-type"service" data-id"${service.id}" class="service">${service.name}</div>  `
+    HTMLstring += `<div data-type="service" data-id="${service.id}" class="service">${service.name}</div>  `
     
 }
     HTMLstring += `</div>`
