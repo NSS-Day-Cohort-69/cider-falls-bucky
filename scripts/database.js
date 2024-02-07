@@ -2,20 +2,20 @@ const database = {
     areas: [
         {
             id: 1,
-            name: "Chamfort River",
-            imageURL: "../assets/chamfort.jpg"
-
+            name: "Lodge",
+            imageURL: "../assets/lodge.jpg"
+            
         },
         {
             id: 2,
             name: "Lost Wolf Hiking Trail",
             imageURL: "../assets/lostwolf.jpg"
-
+            
         },
         {
             id: 3,
-            name: "Lodge",
-            imageURL: "../assets/lodge.jpg"
+            name: "Chamfort River",
+            imageURL: "../assets/chamfort.jpg"
 
         },
         {
