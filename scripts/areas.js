@@ -47,3 +47,17 @@ export const areasList = () => {
     return html
 }
 
+document.addEventListener("click", (clickevent) => {
+    let count = 0
+    const areaTitle = clickevent.target 
+    if (areaTitle.dataset.type == "area-title") {
+        const areaId = parseInt(areaTitle.dataset.id)
+        const guests = getGuests()
+        for( const guest of guests) {
+            if( guest.areaId == areaId) {
+                count += 1
+            }
+        }
+        window.alert(`There are ${count} guests in this area`)
+    } 
+}) 
