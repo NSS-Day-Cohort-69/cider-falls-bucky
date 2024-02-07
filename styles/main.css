@@ -16,7 +16,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    background-color:#f0ebce;
+    background-color: #f0ebce;
     justify-content: space-between;
     white-space: nowrap;
     font-size: 1.8em;
@@ -27,7 +27,7 @@ body {
 
 .park-name {
     padding: 80px;
-    
+
 }
 
 #area-list {
@@ -46,12 +46,12 @@ body {
     flex-basis: 30%;
     margin: 0 1em 3em 0;
     max-width: 25%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .area-card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .area-header {
@@ -93,7 +93,7 @@ body {
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 
@@ -116,14 +116,29 @@ body {
 }
 
 .park-info {
-  font-weight: 400;
-  font-size: 20px;
-  background-color: #D0F5BE;
-  padding: 20px;
-  margin: 20px;
-  color: #665A48;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #D0F5BE;
+    padding: 20px;
+    margin: 20px;
+    color: #665A48;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+
+.service__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.service__list .service {
+    width: 80px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    text-align: center;
 }
