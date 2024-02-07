@@ -8,9 +8,9 @@ const parkNumber = "1-800-CIDER"
 export const getFooter = () => {
     const footerHTML = `
         <footer class="park-info">
-            <div class="park-address">Address: ${parkAddress}</div>
-            <div class="park-email">E-Mail: ${parkEmail}</div>
-            <div class="park-number">Phone Number:${parkNumber}</div>
+            <div class="park-address"><b>Address:</b> <i>${parkAddress}</i></div>
+            <div class="park-email"><b>E-Mail:</b> <i>${parkEmail}</i></div>
+            <div class="park-number"><b>Phone Number:</b> <i>${parkNumber}</i></div>
         </footer>`
         return footerHTML
-    } 
+    }
