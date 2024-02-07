@@ -26,7 +26,7 @@ const database = {
         },
         {
             id: 5,
-            name: "Campgrounds",
+            name: "Camp<wbr>grounds",
             imageURL: "../assets/campgrounds.jpg"
 
         },
