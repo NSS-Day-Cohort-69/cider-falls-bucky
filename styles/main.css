@@ -8,4 +8,14 @@ header img {
     background-color:#f0ebce;
     justify-content: space-between;
     white-space: nowrap;
+    font-size: 1.8em;
+}
+
+.park-name {
+    padding: 50px;
+    
+}
+
+.logo {
+    padding: 50px;
 }
