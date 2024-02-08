@@ -1,4 +1,4 @@
-import { getAreas, getAreaServices, getServices } from "./database.js"
+import { getAreas, getAreaServices, getServices, getGuests } from "./database.js"
 
 // Generates HTML for the Areas section of the page
 export const areasList = () => {
@@ -9,10 +9,10 @@ export const areasList = () => {
 
     // Generates the HTML for each individual Area
     for (const area of areas) {
-        html += `<div class="area-card" data-type="area" data-id="${area.id}">
+        html += `<div class="area-card">
         <div class="area-header">
             <img src="${area.imageURL}">
-            <div class="area-title">${area.name}</div>
+            <div class="area-title" data-type="area" data-id="${area.id}">${area.name}</div>
         </div>
         <div class="area-services">`
 
@@ -50,7 +50,7 @@ export const areasList = () => {
 document.addEventListener("click", (clickevent) => {
     let count = 0
     const areaTitle = clickevent.target 
-    if (areaTitle.dataset.type == "area-title") {
+    if (areaTitle.dataset.type == "area") {
         const areaId = parseInt(areaTitle.dataset.id)
         const guests = getGuests()
         for( const guest of guests) {
